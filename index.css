@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+
+@font-face {
+    font-family: 'Cerebri Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Cerebri Sans'), url('https://fonts.cdnfonts.com/s/57898/Cerebri Sans Book.woff') format('woff');
+}
+@font-face {
+    font-family: 'Cerebri Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Cerebri Sans'), url('https://fonts.cdnfonts.com/s/57898/Cerebri Sans Book Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Cerebri Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Cerebri Sans'), url('https://fonts.cdnfonts.com/s/57898/Cerebri Sans Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Cerebri Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Cerebri Sans'), url('https://fonts.cdnfonts.com/s/57898/Cerebri Sans SemiBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Cerebri Sans';
+    font-style: italic;
+    font-weight: 600;
+    src: local('Cerebri Sans'), url('https://fonts.cdnfonts.com/s/57898/Cerebri Sans SemiBold Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Cerebri Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Cerebri Sans'), url('https://fonts.cdnfonts.com/s/57898/Cerebri Sans Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Cerebri Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Cerebri Sans'), url('https://fonts.cdnfonts.com/s/57898/Cerebri Sans Bold Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Cerebri Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Cerebri Sans'), url('https://fonts.cdnfonts.com/s/57898/Cerebri Sans ExtraBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Cerebri Sans';
+    font-style: italic;
+    font-weight: 800;
+    src: local('Cerebri Sans'), url('https://fonts.cdnfonts.com/s/57898/Cerebri Sans ExtraBold Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Cerebri Sans';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Cerebri Sans'), url('https://fonts.cdnfonts.com/s/57898/Cerebri Sans Heavy.woff') format('woff');
+}
+
+body{
+    background-color:#f3f2f4;
+    margin:0 auto;
+}
+
+
+  .header{
+    width:105%;
+    height:300px;
+    left:-3%;
+    position:relative;
+    background-image: linear-gradient(#329de4, rgb(44, 73, 237));
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius: 60% 40%;
+    border-bottom-right-radius: 60% 40%;
+    z-index:-98;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -100px;
+    padding-bottom: 0px;
+  }
+
+  .container{
+    margin-top:60px;
+    margin-bottom:100px;
+    margin-right:100px;
+    width:1300px;
+    height:1000px;
+    background-color:white;
+    border-radius:10px;
+    position:relative;
+    top:50%;
+    left:50%;
+    overflow: hidden;
+    transform:translateX(-50%);
+    z-index:99;
+  }
+  
+
+.title {
+    font-family: 'Cerebri Sans', sans-serif;
+    font-size:40px;
+    font-weight: 600;
+    margin-top:-15px;
+    color:white;
+    text-shadow: #000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+             #000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px;
+             
+}
+
+.cursivetitle {
+    font-family:'Kristi'; 
+    font-size: 70px;
+    font-weight:300;
+    margin-top:-180px;
+    color:rgb(35, 56, 177);
+    text-shadow: #fff 0px 0px 2px,    #fff 0px 0px 2px,    #fff 0px 0px 2px,
+    #fff 0px 0px 2px,    #fff 0px 0px 2px,    #fff 0px 0px 2px;
+}
+
+.forms {
+    margin: 150px 80px 40px 80px;
+    font-family: 'Cerebri Sans', sans-serif;
+    font-size:24px;
+    font-weight: 600;
+    position: relative;
+}
+
+.firstrow, .secondrow, .thirdrow, .nextrow {
+    align-items: center;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.frcolumn1, .frowcolumn2 {
+    margin-right:45px;
+}
+
+.frinput[type=text]{
+    width:350px;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.2s;
+    height:45px;
+    font-size:20px;
+    font-family: 'Cerebri Sans', sans-serif;
+    font-weight: 400;
+}
+
+input[type=text]:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 2px 0 dodgerBlue;
+  }
+
+.secondrow, .thirdrow, .lastrow, .nextrow {
+    margin-top:10px;
+}
+
+.srowcolumn1, .srowcolumn2, .srowcolumn3 {
+    margin-right:50px;
+}
+
+.srinput[type=text],[type=date],[type=number],select.srinput, .trinput, .lrinput, .nrinput, .nrinput1{
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.2s;
+    height:45px;
+    font-size:20px;
+    font-family: 'Cerebri Sans', sans-serif;
+    font-weight: 400;
+}
+
+.srinput[type=text]{
+    width:470px;
+}
+
+.srinput[type=date]{
+    width:220px;
+}
+
+.srinput[type=number]{
+    width:150px;
+}
+
+select.srinput {
+    width:150px;
+}
+
+.trowcolumn1 {
+    margin-right:50px;
+}
+
+.trinput[type=text] {
+    width:545px;
+}
+
+.lrinput[type=text] {
+    width:100%;
+}
+
+.nrowcolumn1, .nrowcolumn2 {
+    margin-right:50px;
+}
+
+.nrinput1[type=text] {
+    width:640px;
+}
+
+.nrinput[type=text]{
+    width:200px;
+}
+
+.nrinput[type=number]{
+    width:200px;
+}

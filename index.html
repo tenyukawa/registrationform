@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <meta name="description" content="">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="headertext">
+                <h1 align="center" class="title"> City of Mandaluyong Science High School</h1>
+            </div>
+        </div>
+                <h2 class="cursivetitle"> <center>student registration form</center> </h2>
+
+    <form action="/action.page.php" method="post">
+        <div class="forms">
+                    <div class="firstrow">
+                    <div class="frcolumn1">
+                        <label>First Name:</label>
+                        <br>
+                        <input type="text" class="frinput" required>
+                        </div>
+                    <div class="frowcolumn2">
+                        <label>Middle Name:</label>
+                        <br>
+                        <input type="text" class="frinput" required>
+                    </div>
+                    <div class="frowcolumn3">
+                        <label>Last Name:</label>
+                        <br>
+                        <input type="text" class="frinput" required>
+                    </div>
+                </div>
+                <div class="secondrow">
+                    <div class="srowcolumn1">
+                        <label>Email:</label>
+                        <br>
+                        <input type="text" class="srinput" required>
+                    </div>
+                    <div class="srowcolumn2">
+                        <label>Birthdate:</label>
+                        <br>
+                        <input type="date" class="srinput" id="dateString" required>
+                    </div>
+                    <div class="srowcolumn3">
+                        <label>Age:</label>
+                        <br>
+                        <input type="number" class="srinput" id="srinput" min="1" max="100" required>
+                    </div>
+                    <div class="srowcolumn4">
+                        <label>Sex:</label>
+                        <br>
+                        <select class="srinput" required>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="nextrow">
+                    <div class="nrowcolumn1">
+                        <label>Address:</label>
+                        <br>
+                        <input type="text" class="nrinput1" required>
+                    </div>
+                    <div class="nrowcolumn2">
+                        <label>Nationality:</label>
+                        <br>
+                        <input type="text" class="nrinput" required>
+                    </div>
+                    <div class="nrowcolumn3">
+                        <label>Contact No.</label>
+                        <br>
+                        <input type="number" class="nrinput" required>
+                    </div>
+                </div>
+                <div class="thirdrow">
+                    <div class="trowcolumn1">
+                        <label>Previous School:</label>
+                        <br>
+                        <input type="text" class="trinput" required>
+                    </div>
+                    <div class="trowcolumn2">
+                        <label>Highest Attained Award:</label>
+                        <br>
+                        <input type="text" class="trinput" required>
+                    </div>
+                </div>
+                <div class="lastrow">
+                    <div class="lrowcolumn1">
+                        <label>Why do you want to join Mandsci?</label>
+                        <br>
+                        <input type="text" class="lrinput" required>
+                    </div>
+                </div>
+           
+        </div>
+    </form>
+
+    <center>
+    <button style="font-family: 'Cerebri Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px; padding: 5px 15px 5px 15px;">
+        Submit
+    </button>
+    </center>
+    </div>    
+
+    
+</body>
+
+
+<script>
+    srinput.oninput = function () {
+    if (this.value.length > 3) {
+        this.value = this.value.slice(0,3); 
+    }
+    if (this.value > 100) {
+        this.value = 100;
+    }
+}
+</script>
+</html>
